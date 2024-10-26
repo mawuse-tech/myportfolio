@@ -2,7 +2,9 @@ import React from 'react';
 import pic from "../assets/images/profilePic.jpg";
 import About from './About';
 import Nav from './Nav';
-import Offers from './skills';
+import Offers from './Offers';
+
+
 
 
 
