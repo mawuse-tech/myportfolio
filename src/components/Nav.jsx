@@ -45,7 +45,7 @@ useEffect(() => {
 
           {/* Dropdown menu */}
           {isDropdownOpen && (
-            <div className='absolute right-0 mt-2 w-48 bg-gray-800 rounded-lg shadow-lg z-20'>
+            <div className='absolute right-0 mt-2 w-48 bg-pink-800 rounded-lg shadow-lg z-20 text-white'>
               <div className='flex flex-col p-2'>
                 <h4 className='cursor-pointer hover:text-gray-300 p-2'>Home</h4>
                 <h4 className='cursor-pointer hover:text-gray-300 p-2'>About</h4>
