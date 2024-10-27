@@ -8,7 +8,7 @@ import sn6 from "../assets/images/sreen6.png";
 
 function MyWork() {
   return (
-    <div className="flex flex-col items-center my-16 bg-[#242424]">
+    <div className="flex flex-col items-center my-16 bg-[#242424] font-mono">
       {/* Title */}
       <h1 className="text-3xl font-bold mb-8 text-center text-white">MY WORK</h1>
 

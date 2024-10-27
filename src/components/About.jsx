@@ -2,11 +2,11 @@ import React from 'react';
 
 function About() {
   return (
-    <div className="bg-white w-full h-screen flex justify-center items-center">
+    <div className="bg-white w-full h-screen flex justify-center items-center font-mono">
       {/* Main content div */}
       <div className="w-full md:w-[70%] h-auto md:h-[80vh] bg-[#242424] flex flex-col justify-center items-center text-center px-6 md:px-12 py-8 md:py-12 shadow-2xl shadow-blue-500/20 space-y-4">
         <h1 className="text-white text-3xl md:text-4xl font-bold">Who Am I</h1>
-        <h4 className="text-white text-xl md:text-2xl">Developer And Designer</h4>
+        <h4 className="text-white text-xl md:text-2xl">Developer And <span className='text-pink-800'>Designer</span></h4>
         
         <p className="text-white text-sm md:text-base leading-relaxed max-w-3xl px-4 md:px-0">
           Hi there! I’m Mawuse Akpeke, a passionate junior developer with a love for crafting intuitive and engaging
@@ -22,9 +22,9 @@ function About() {
           Let’s bring your ideas to life together!
         </p>
         
-        <button className="px-8 py-3 bg-white text-black font-semibold rounded-md hover:bg-gray-300 transition-all duration-300">
-          Let's Talk
-        </button>
+        <button className="w-[120px] h-[40px] p-2 bg-[#242424] text-white  border-white hover:bg-white hover:text-black transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[rgba(255, 255, 255, 0.3)] bg-pink-800">
+            LEARN MORE
+          </button>
       </div>
     </div>
   );

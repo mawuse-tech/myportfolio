@@ -32,8 +32,11 @@ useEffect(() => {
 
   return (
     <div>
-      <nav className='w-full flex flex-col md:flex-row justify-around items-center p-4 shadow-2xl shadow-blue-500/20'>
-        <h1 className='text-white text-xl font-bold'>PORTFOLIO</h1>
+      <nav className='w-full flex flex-col md:flex-row justify-around items-center p-4 shadow-2xl shadow-blue-500/20 font-mono'>
+      <h1 className="relative text-white text-xl font-bold before:absolute before:left-0 before:-top-2 after:absolute after:left-0 after:-bottom-2 before:bg-pink-800 after:bg-pink-800 before:w-full after:w-full before:h-1 after:h-1">
+  PORTFOLIO
+</h1>
+
         <div className='relative'>
           {/* Dropdown toggle icon */}
           <div 
