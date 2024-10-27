@@ -3,6 +3,7 @@ import pic from "../assets/images/profilePic.jpg";
 import About from './About';
 import Nav from './Nav';
 import Offers from './Offers';
+import MyWork from './MyWork';
 
 
 
@@ -50,14 +51,12 @@ function Home() {
         </div>
       </header>
 
-      <div>
-        <About />
-      </div>
+      <About />
 
-     <div>
-      <Offers/>
-     </div>
-     
+      <Offers />
+
+      <MyWork />
+
     </div>
   );
 }
