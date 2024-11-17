@@ -52,7 +52,7 @@ function DashboardLayout() {
         )}
 
         {/* Outlet for main content */}
-        <div className="flex-1 flex justify-center items-center p-4 md:ml-64">
+        <div className="flex-1 flex justify-center items-center p-6">
           <div className="w-full max-w-4xl mx-auto">
             <Outlet />
           </div>

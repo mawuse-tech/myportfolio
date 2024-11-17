@@ -77,7 +77,7 @@ function Home() {
 
       <About />
       <Offers />
-      <MyWork />
+      {/* <MyWork /> */}
       <Footer />
     </div>
   );

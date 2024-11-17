@@ -1,8 +1,9 @@
 import React from 'react'
+import MyWork from '../MyWork'
 
 function Links() {
   return (
-    <div>Links</div>
+    <div><MyWork/></div>
   )
 }
 

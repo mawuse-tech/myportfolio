@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import { motion } from 'framer-motion';
 
 function Sidebar() {
@@ -24,7 +25,7 @@ function Sidebar() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          Resume
+          <Link to="/dashboard">Resume</Link>
         </motion.li>
         <motion.li
           className="text-lg hover:text-pink-600 cursor-pointer"
@@ -32,7 +33,7 @@ function Sidebar() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Links
+          <Link to="/dashboard/link">My Projects</Link>
         </motion.li>
         <motion.li
           className="text-lg hover:text-pink-600 cursor-pointer"
@@ -40,7 +41,7 @@ function Sidebar() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
         >
-          Contact Information
+          <Link to="/contact">Contact Information</Link>
         </motion.li>
         <motion.li
           className="text-lg hover:text-pink-600 cursor-pointer"
@@ -48,7 +49,7 @@ function Sidebar() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          Projects
+          <Link to="/projects">Projects</Link>
         </motion.li>
         <motion.li
           className="text-lg hover:text-pink-600 cursor-pointer"
@@ -56,7 +57,7 @@ function Sidebar() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
         >
-          Skills
+          <Link to="/skills">Skills</Link>
         </motion.li>
       </motion.ul>
     </div>
