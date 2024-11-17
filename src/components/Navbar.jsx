@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'; // Import the desired Font Awesome icon
 
-const Nav = () => {
+const Navbar = () => {
   // State to manage dropdown visibility
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
@@ -64,4 +64,4 @@ useEffect(() => {
   );
 };
 
-export default Nav
+export default Navbar
