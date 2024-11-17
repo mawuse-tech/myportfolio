@@ -2,8 +2,8 @@ import React from 'react';
 
 function Sidebar() {
   return (
-    <div className="bg-[#242424] text-white h-full p-6 font-mono">
-      <h2 className="text-2xl font-bold mb-8">Portfolio Sidebar</h2>
+    <div className="bg-[#242424] text-white h-full p-6 font-mono ">
+      <h2 className="text-2xl font-bold mb-8">My Dashboard</h2>
       <ul className="space-y-6">
         <li className="text-lg hover:text-pink-600 cursor-pointer">
           Resume
