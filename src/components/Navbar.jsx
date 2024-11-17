@@ -55,7 +55,11 @@ const Navbar = () => {
             <div className='absolute right-0 mt-2 w-48 bg-pink-800 rounded-lg shadow-lg z-20 text-white'>
               <div className='flex flex-col p-2'>
                 <h4 className='cursor-pointer hover:text-gray-300 p-2'>Home</h4>
+
+                <Link to= "/about-us">
                 <h4 className='cursor-pointer hover:text-gray-300 p-2'>About</h4>
+                </Link>
+
                 <h4 className='cursor-pointer hover:text-gray-300 p-2'>Resume</h4>
                 <h4 className='cursor-pointer hover:text-gray-300 p-2'>Blog</h4>
                 <h4 className='cursor-pointer hover:text-gray-300 p-2'>Contact</h4>

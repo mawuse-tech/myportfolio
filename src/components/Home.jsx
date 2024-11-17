@@ -6,10 +6,7 @@ import MyWork from './MyWork';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
-
-
-
-
+import { motion } from 'framer-motion';
 
 function Home() {
   return (
@@ -23,14 +20,24 @@ function Home() {
           {/* Main Section: Avatar and Text */}
           <div className="flex flex-col md:flex-row justify-center items-center h-full space-y-6 md:space-y-0">
             {/* Avatar Image */}
-            <div className="flex-1 flex justify-center md:justify-end">
+            <motion.div 
+              className="flex-1 flex justify-center md:justify-end"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
               <div className="w-[12rem] h-[12rem] md:w-[15rem] md:h-[15rem]">
                 <img src={pic} alt="avatar" className="w-full h-full rounded-full object-cover shadow-xl shadow-[rgba(255, 255, 255, 0.1)]" />
               </div>
-            </div>
+            </motion.div>
 
             {/* Text Content */}
-            <div className="flex-1 text-center md:text-left px-4">
+            <motion.div 
+              className="flex-1 text-center md:text-left px-4"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+            >
               <p className="text-white text-lg">Hi, I'm a <span className='text-pink-800'>Web Developer</span></p>
               <h1 className="text-[28px] md:text-[35px] font-extrabold text-white" data-text="MAWUSE AKPEKE">MAWUSE AKPEKE</h1>
               <p className="text-white mt-2">
@@ -40,33 +47,38 @@ function Home() {
 
               {/* Buttons */}
               <div className="flex justify-center md:justify-start space-x-4 mt-4">
-                <button className="w-[120px] h-[40px] p-2 bg-[#242424] text-white  border-white hover:bg-white hover:text-black transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[rgba(255, 255, 255, 0.3)] bg-pink-800">
-                  HIRE ME
-                </button>
-
-                <Link
-                  to="/dashboard"
-                  className="inline-block w-[120px] h-[40px] p-2 bg-[#242424] text-white hover:bg-white hover:text-black transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[rgba(255, 255, 255, 0.3)] bg-pink-800 text-center"
+                <motion.button 
+                  className="w-[120px] h-[40px] p-2 bg-[#242424] text-white border-white hover:bg-white hover:text-black transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[rgba(255, 255, 255, 0.3)] bg-pink-800"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.5 }}
                 >
-                  LEARN MORE
-                </Link>
+                  HIRE ME
+                </motion.button>
+
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.7 }}
+                >
+                  <Link
+                    to="/dashboard"
+                    className="inline-block w-[120px] h-[40px] p-2 bg-[#242424] text-white hover:bg-white hover:text-black transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[rgba(255, 255, 255, 0.3)] bg-pink-800 text-center"
+                  >
+                    LEARN MORE
+                  </Link>
+                </motion.div>
 
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </header>
 
-
-
       <About />
-
       <Offers />
-
       <MyWork />
-
       <Footer />
-
     </div>
   );
 }

@@ -4,6 +4,7 @@ import './App.css'
 import Home from './components/Home'
 import DashboardLayout from './components/Dashboard/DashboardLayouts';
 import Resume from './components/DashboardLayouts/Resume';
+import About from './components/About';
 
 
 function App() {
@@ -11,6 +12,11 @@ function App() {
     {
       path: "/",
       element: <Home/>
+    },
+
+    {
+     path: "/about-us",
+     element: <About/>
     },
 
     {
