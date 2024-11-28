@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import sn1 from "../assets/images/screen1.png";
 import sn2 from "../assets/images/screen2.png";
 import sn3 from "../assets/images/screen3.png";
@@ -47,16 +48,67 @@ function MyWork() {
     },
   ];
 
-  return (
-    <div className="flex flex-col items-center font-mono">
-      {/* Title */}
-      <h1 className="text-3xl font-bold mb-8 text-center text-black">MY WORK</h1>
+  // Updated animation variants with smoother transitions
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.1,
+        staggerChildren: 0.1  // Reduced stagger time
+      }
+    }
+  };
 
-      {/* Image Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  const itemVariants = {
+    hidden: { y: 10, opacity: 0 },  // Reduced initial y offset
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.4,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  const pageTransition = {
+    initial: { opacity: 0 },  // Removed x translation for a simpler fade
+    animate: { opacity: 1 },
+    exit: { opacity: 0 },
+    transition: { duration: 0.3, ease: "easeInOut" }
+  };
+
+  return (
+    <motion.div
+      {...pageTransition}
+      className="flex flex-col items-center font-mono"
+    >
+      {/* Updated title animation */}
+      <motion.h1 
+        className="text-3xl font-bold mb-8 text-center text-black"
+        initial={{ opacity: 0, y: -20 }}  // Reduced y offset
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
+      >
+        MY WORK
+      </motion.h1>
+
+      {/* Grid container with animation */}
+      <motion.div 
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         {workDetails.map((work, index) => (
-          <div
+          <motion.div
             key={index}
+            variants={itemVariants}
+            whileHover={{ 
+              scale: 1.05,
+              transition: { duration: 0.2 }
+            }}
             className="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-transform duration-300"
           >
             {/* Image */}
@@ -80,10 +132,10 @@ function MyWork() {
                 view project →
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 

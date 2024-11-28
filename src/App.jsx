@@ -6,6 +6,8 @@ import DashboardLayout from './components/Dashboard/DashboardLayouts';
 import Resume from './components/DashboardLayouts/Resume';
 import About from './components/About';
 import Links from './components/DashboardLayouts/Links';
+import Contact from './components/DashboardLayouts/Contact';
+
 
 
 function App() {
@@ -29,6 +31,11 @@ function App() {
        element: <Resume/>
         },
 
+        {
+          path: "contact",
+          element: <Contact/>
+        },
+        
         {
           path: "link",
           element: <Links/>

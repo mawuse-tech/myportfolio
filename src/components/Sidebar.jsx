@@ -41,7 +41,7 @@ function Sidebar() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
         >
-          <Link to="/contact">Contact Information</Link>
+          <Link to="/dashboard/contact">Contact Information</Link>
         </motion.li>
         <motion.li
           className="text-lg hover:text-pink-600 cursor-pointer"
