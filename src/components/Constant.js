@@ -10,6 +10,7 @@ const K={
             icon: faReact,
             text:' React Apllication',
             description:'Building dynamic and responsive web applications using React, ensuring a smooth user experience.'
+        
         },
         {
             icon: faJs,

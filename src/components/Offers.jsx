@@ -17,8 +17,10 @@ const Offers = () => {
                                 <span className='p-3 bg-[#242424] w-fit text-white text-xl rounded-full z-10'>
                                     <FontAwesomeIcon icon={offer.icon} />
                                 </span>
-                                <h3 className='text-2xl font-semibold z-10'>{offer.text}</h3>
-                                <p className='text-gray-700 z-10'>{offer.description}</p>
+                                <h3 className='text-2xl font-semibold z-10 group-hover:text-white transition-colors duration-300'>{offer.text}</h3>
+                                <p className='text-gray-700 z-10 group-hover:text-white transition-colors duration-300'>{offer.description}</p>
+
+                                <p className='text-gray-700 z-10 group-hover:text-white transition-colors duration-300'>{offer.link}</p>
                             </div>
                         );
                     })

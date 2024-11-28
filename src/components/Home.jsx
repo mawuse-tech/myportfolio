@@ -1,5 +1,5 @@
 import React from 'react';
-import pic from "../assets/images/profilePic.jpg";
+import pic from "../assets/images/mee.png";
 import About from './About';
 import Offers from './Offers';
 import MyWork from './MyWork';
@@ -21,13 +21,13 @@ function Home() {
           <div className="flex flex-col md:flex-row justify-center items-center h-full space-y-6 md:space-y-0">
             {/* Avatar Image */}
             <motion.div 
-              className="flex-1 flex justify-center md:justify-end"
+              className="flex-1 flex justify-center md:justify-end md:pr-16"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
               <div className="w-[12rem] h-[12rem] md:w-[15rem] md:h-[15rem]">
-                <img src={pic} alt="avatar" className="w-full h-full rounded-full object-cover shadow-xl shadow-[rgba(255, 255, 255, 0.1)]" />
+                <img src={pic} alt="avatar" className="w-full h-full rounded-full object-cover  shadow-xl shadow-[rgba(255, 255, 255, 0.1)]" />
               </div>
             </motion.div>
 

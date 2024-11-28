@@ -13,38 +13,44 @@ function MyWork() {
       title: "Modern Web App",
       description: "A sleek web application with responsive design.",
       image: sn1,
+      link: "https://example.com/project1",
     },
     {
       title: "E-commerce Platform",
       description: "An intuitive e-commerce platform for online shopping.",
       image: sn2,
+      link: "https://example.com/project2",
     },
     {
       title: "Portfolio Showcase",
       description: "A personal portfolio to highlight projects and skills.",
       image: sn3,
+      link: "https://example.com/project3",
     },
     {
       title: "Blog Website",
       description: "A blog platform for sharing tech articles and tutorials.",
       image: sn4,
+      link: "https://example.com/project4",
     },
     {
       title: "Landing Page Design",
       description: "A stunning landing page crafted for marketing campaigns.",
       image: sn5,
+      link: "https://example.com/project5",
     },
     {
       title: "Dashboard Interface",
       description: "A user-friendly dashboard with powerful analytics.",
       image: sn6,
+      link: "https://example.com/project6",
     },
   ];
 
   return (
     <div className="flex flex-col items-center font-mono">
       {/* Title */}
-      <h1 className="text-3xl font-bold mb-8 text-center text-white">MY WORK</h1>
+      <h1 className="text-3xl font-bold mb-8 text-center text-black">MY WORK</h1>
 
       {/* Image Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -63,8 +69,16 @@ function MyWork() {
 
             {/* Text Section */}
             <div className="p-4 text-center">
-              <p className="text-white font-semibold">{work.title}</p>
-              <p className="text-gray-400 text-sm">{work.description}</p>
+              <p className="text-black font-semibold">{work.title}</p>
+              <p className="text-gray-600 text-sm mb-2">{work.description}</p>
+              <a
+                href={work.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-pink-700 hover:text-pink-600 transition-colors duration-300 text-sm"
+              >
+                view project →
+              </a>
             </div>
           </div>
         ))}
