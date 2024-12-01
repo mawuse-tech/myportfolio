@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPinterestP, faLinkedinIn, faInstagram, faFacebookF, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedinIn, faInstagram, faFacebookF, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (
@@ -9,21 +9,31 @@ function Footer() {
       
       {/* Social Media Icons */}
       <div className="flex justify-center space-x-4 mb-8">
-        <span className="bg-pink-800 hover:bg-pink-800 w-10 h-10 rounded-full flex justify-center items-center transition duration-300">
-          <FontAwesomeIcon icon={faPinterestP} className="text-white text-xl" />
-        </span>
-        <span className="bg-pink-800 hover:bg-pink-800 w-10 h-10 rounded-full flex justify-center items-center transition duration-300">
-          <FontAwesomeIcon icon={faLinkedinIn} className="text-white text-xl" />
-        </span>
-        <span className="bg-pink-800 hover:bg-pink-800 w-10 h-10 rounded-full flex justify-center items-center transition duration-300">
-          <FontAwesomeIcon icon={faInstagram} className="text-white text-xl" />
-        </span>
-        <span className="bg-pink-800 hover:bg-pink-800 w-10 h-10 rounded-full flex justify-center items-center transition duration-300">
-          <FontAwesomeIcon icon={faFacebookF} className="text-white text-xl" />
-        </span>
-        <span className="bg-pink-800 hover:bg-pink-800 w-10 h-10 rounded-full flex justify-center items-center transition duration-300">
-          <FontAwesomeIcon icon={faXTwitter} className="text-white text-xl" />
-        </span>
+        <a href="https://github.com/mawuse-tech" target="_blank" rel="noopener noreferrer">
+          <span className="bg-pink-800 hover:bg-pink-800 w-10 h-10 rounded-full flex justify-center items-center transition duration-300">
+            <FontAwesomeIcon icon={faGithub} className="text-white text-xl" />
+          </span>
+        </a>
+        <a href="https://www.linkedin.com/in/mawuse-akpeke-aa28a8245/" target="_blank" rel="noopener noreferrer">
+          <span className="bg-pink-800 hover:bg-pink-800 w-10 h-10 rounded-full flex justify-center items-center transition duration-300">
+            <FontAwesomeIcon icon={faLinkedinIn} className="text-white text-xl" />
+          </span>
+        </a>
+        <a href="https://instagram.com/YourInstagramUsername" target="_blank" rel="noopener noreferrer">
+          <span className="bg-pink-800 hover:bg-pink-800 w-10 h-10 rounded-full flex justify-center items-center transition duration-300">
+            <FontAwesomeIcon icon={faInstagram} className="text-white text-xl" />
+          </span>
+        </a>
+        <a href="https://facebook.com/YourFacebookUsername" target="_blank" rel="noopener noreferrer">
+          <span className="bg-pink-800 hover:bg-pink-800 w-10 h-10 rounded-full flex justify-center items-center transition duration-300">
+            <FontAwesomeIcon icon={faFacebookF} className="text-white text-xl" />
+          </span>
+        </a>
+        <a href="https://twitter.com/YourTwitterUsername" target="_blank" rel="noopener noreferrer">
+          <span className="bg-pink-800 hover:bg-pink-800 w-10 h-10 rounded-full flex justify-center items-center transition duration-300">
+            <FontAwesomeIcon icon={faXTwitter} className="text-white text-xl" />
+          </span>
+        </a>
       </div>
 
       {/* Contact Information */}
