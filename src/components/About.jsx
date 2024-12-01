@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 function About() {
   return (
@@ -59,7 +60,7 @@ function About() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.8 }}
         >
-          LEARN MORE
+          <Link to="/dashboard/fun">LEARN MORE</Link>
         </motion.button>
       </div>
     </div>

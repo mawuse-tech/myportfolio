@@ -5,8 +5,9 @@ import Home from './components/Home'
 import DashboardLayout from './components/Dashboard/DashboardLayouts';
 import Resume from './components/DashboardLayouts/Resume';
 import About from './components/About';
-import Links from './components/DashboardLayouts/Links';
 import Contact from './components/DashboardLayouts/Contact';
+import Fun from './components/DashboardLayouts/Fun';
+import MyWork from './components/MyWork';
 
 
 
@@ -35,10 +36,15 @@ function App() {
           path: "contact",
           element: <Contact/>
         },
+
+        {
+          path: "mywork",
+          element: <MyWork/>
+        },
         
         {
-          path: "link",
-          element: <Links/>
+          path: "fun",
+          element: <Fun/>
         }
       ]
 

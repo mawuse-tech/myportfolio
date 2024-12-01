@@ -1,9 +1,36 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import html2pdf from 'html2pdf.js';
 
 function Resume() {
+  const resumeRef = useRef(null);
+
+  const downloadPDF = () => {
+    const element = resumeRef.current;
+    const opt = {
+      margin: 1,
+      filename: 'resume.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+    };
+
+    html2pdf().set(opt).from(element).save();
+  };
+
   return (
     <div className="min-h-screen p-8 bg-gradient-to-br from-pink-100 via-white to-pink-100">
-      <div className="container mx-auto px-4 py-8">
+      {/* Download Button */}
+      <div className="container mx-auto px-4 mb-4">
+        <button
+          onClick={downloadPDF}
+          className="float-right bg-pink-600 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
+        >
+          Download Resume
+        </button>
+      </div>
+
+      {/* Resume Content - Add ref to the container */}
+      <div ref={resumeRef} className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto backdrop-blur-lg bg-white/80 rounded-xl shadow-lg p-8 border border-pink-100">
           <h1 className="text-4xl font-bold mb-8 text-pink-800 text-center">Resume</h1>
 
