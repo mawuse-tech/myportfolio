@@ -33,26 +33,18 @@ function DashboardLayout() {
       </div>
 
       {/* Main content with Sidebar and Outlet */}
-      <div className="flex flex-1 justify-center">
+      <div className="flex flex-1">
         {/* Sidebar */}
         <div
           className={`${
             isSidebarOpen ? "block" : "hidden"
-          } md:block fixed inset-y-0 left-0 w-64 bg-[#242424] text-pink-800 z-40 md:relative md:translate-x-0 transform transition-transform duration-300 ease-in-out`}
+          } md:block fixed md:sticky top-0 h-screen w-64 bg-[#242424] text-pink-800 z-40 overflow-y-auto`}
         >
           <Sidebar />
         </div>
 
-        {/* Overlay for mobile sidebar */}
-        {isSidebarOpen && (
-          <div
-            className="fixed inset-0 z-30 bg-black opacity-50 md:hidden"
-            onClick={toggleSidebar}
-          ></div>
-        )}
-
         {/* Outlet for main content */}
-        <div className="flex-1 flex justify-center items-center p-6">
+        <div className="flex-1 flex justify-center items-start p-6">
           <div className="w-full max-w-4xl mx-auto">
             <Outlet />
           </div>

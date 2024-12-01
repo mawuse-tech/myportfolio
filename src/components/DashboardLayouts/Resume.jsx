@@ -49,11 +49,10 @@ function Resume() {
               <div className="transform transition-all duration-300">
                 <h3 className="text-xl font-bold text-pink-800">Mest Africa (2024)</h3>
                 <ul className="mt-3 space-y-2 text-lg">
-                  {['Built a library web app with an API.',
-                    'Built an apartment rental app with an API.',
-                    'Built an Advert App with an API.',
-                    'Solo project for a software engineering course.',
-                    'Built a portfolio website.'].map((item, index) => (
+                  {['Designed and developed a responsive portfolio website using React, Tailwind CSS to showcase projects and skills.',
+                    'Collaborated with a backend developer to build a rental web app that connects house owners and prospective tenants',
+                    'Collaborated with a team to design and develop an advertising web application using React and Tailwind CSS.',
+                    'Solo project for a software engineering course.'].map((item, index) => (
                     <li key={index} 
                         className="flex items-start space-x-2 hover:translate-x-2 transition-transform duration-300"
                         style={{ animationDelay: `${index * 100}ms` }}>

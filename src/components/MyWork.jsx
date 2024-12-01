@@ -1,32 +1,32 @@
 import React from "react";
 import { motion } from "framer-motion";
-import sn1 from "../assets/images/screen1.png";
-import sn2 from "../assets/images/screen2.png";
-import sn3 from "../assets/images/screen3.png";
+import sn1 from "../assets/images/screen7.png";
+import sn2 from "../assets/images/screen1.png";
+import sn3 from "../assets/images/screen2.png";
 import sn4 from "../assets/images/screen4.png";
-import sn5 from "../assets/images/sreen5.png";
+import sn5 from "../assets/images/screen3.png";
 import sn6 from "../assets/images/sreen6.png";
 
 function MyWork() {
   // Unique titles and descriptions for each image
   const workDetails = [
     {
-      title: "Modern Web App",
-      description: "A sleek web application with responsive design.",
+      title: "A Rental Web App",
+      description: "A web application that connects house owners and prospective tenants.",
       image: sn1,
-      link: "https://example.com/project1",
+      link: "https://renteaze.netlify.app/",
     },
     {
-      title: "E-commerce Platform",
-      description: "An intuitive e-commerce platform for online shopping.",
+      title: "An Advertising Web App",
+      description: "A web application that connects advertisers and potential customers.",
       image: sn2,
-      link: "https://example.com/project2",
+      link: "https://advert-app.netlify.app/",
     },
     {
-      title: "Portfolio Showcase",
-      description: "A personal portfolio to highlight projects and skills.",
+      title: "A Library Web App",
+      description: "A web application that allows users to borrow and return books.",
       image: sn3,
-      link: "https://example.com/project3",
+      link: "https://trailblaze-library.netlify.app/",
     },
     {
       title: "Blog Website",
