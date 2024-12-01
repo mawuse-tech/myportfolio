@@ -34,11 +34,19 @@ function DashboardLayout() {
 
       {/* Main content with Sidebar and Outlet */}
       <div className="flex flex-1">
+        {/* Overlay for mobile */}
+        {isSidebarOpen && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 z-30 md:hidden"
+            onClick={toggleSidebar}
+          ></div>
+        )}
+
         {/* Sidebar */}
         <div
-          className={`${
-            isSidebarOpen ? "block" : "hidden"
-          } md:block fixed md:sticky top-0 h-screen w-64 bg-[#242424] text-pink-800 z-40 overflow-y-auto`}
+          className={`fixed md:sticky top-0 h-screen w-64 bg-[#242424] text-pink-800 z-40 overflow-y-auto transition-transform duration-300 ease-in-out ${
+            isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
+          } md:translate-x-0`}
         >
           <Sidebar />
         </div>
