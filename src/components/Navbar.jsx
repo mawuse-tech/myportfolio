@@ -32,16 +32,18 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className='w-full flex flex-col md:flex-row justify-around items-center p-4 shadow-2xl shadow-blue-500/20 font-mono bg-[#242424]'>
+      <nav className='w-full flex flex-row justify-between items-center p-4 shadow-2xl shadow-blue-500/20 font-mono bg-[#242424]'>
 
 
         <Link to= "/">
-          <h1 className="relative text-white text-xl font-bold before:absolute before:left-0 before:-top-2 after:absolute after:left-0 after:-bottom-2 before:bg-pink-800 after:bg-pink-800 before:w-full after:w-full before:h-1 after:h-1">
+          <h1 className="relative text-white text-xl font-bold before:absolute before:left-0 before:-top-2 after:absolute after:left-0 after:-bottom-2 before:bg-pink-800 after:bg-pink-800 before:w-full after:w-full before:h-1 after:h-1 mx-4">
             PORTFOLIO
           </h1>
         </Link>
 
-        
+        <Link to="/dashboard" className="ml-auto">
+          <FontAwesomeIcon icon={faBars} className="text-white text-xl mx-4" />
+        </Link>
       </nav>
     </div>
   );
