@@ -1,50 +1,51 @@
 import React from "react";
 import { motion } from "framer-motion";
-import sn1 from "../assets/images/screen7.png";
-import sn2 from "../assets/images/screen1.png";
-import sn3 from "../assets/images/screen2.png";
-import sn4 from "../assets/images/screen4.png";
-import sn5 from "../assets/images/screen3.png";
-import sn6 from "../assets/images/sreen6.png";
+import sn1 from "../assets/images/eagle.png";
+import sn2 from "../assets/images/sister.png";
+import sn3 from "../assets/images/screen7.png";
+import sn4 from "../assets/images/oyibo.png";
+import sn5 from "../assets/images/movie.png";
+import sn6 from "../assets/images/cookie.png";
 
 function MyWork() {
   // Unique titles and descriptions for each image
   const workDetails = [
     {
-      title: "A Rental Web App",
-      description: "A web application that connects house owners and prospective tenants.",
+      title: "Agric E-Commerce App",
+      description: "An online store for selling farm products, built to simplify shopping for agricultural goods.",
+
       image: sn1,
+      link: "https://eagleparkinno.netlify.app/",
+    },
+    {
+      title: "Talk to a Sister",
+      description: "A support platform connecting women with professionals for confidential conversations.",
+      image: sn2,
+      link: "https://sist.netlify.app/",
+    },
+    {
+      title: "Rental App",
+      description: "A user-friendly platform for browsing, listing, and renting apartments with ease.",
+      image: sn3,
       link: "https://renteaze.netlify.app/",
     },
     {
-      title: "An Advertising Web App",
-      description: "A web application that connects advertisers and potential customers.",
-      image: sn2,
-      link: "https://advert-app.netlify.app/",
-    },
-    {
-      title: "A Library Web App",
-      description: "A web application that allows users to borrow and return books.",
-      image: sn3,
-      link: "https://trailblaze-library.netlify.app/",
+      title: "Oyibo Metals Website",
+      description: "A showcase platform highlighting innovative locally-built electric power machine.",
+      image: sn4,
+      link: "https://oyibo.netlify.app/",
     },
     {
       title: "A movie website",
-      description: "A web application that allows users to search for movies and view details.",
-      image: sn4,
-      link: "https://example.com/project4",
-    },
-    {
-      title: "A fashion website",
-      description: "A web application that allows users to browse and purchase fashion items.",
+      description: "A web application that allows users to view top ten IMDB movies.",
       image: sn5,
-      link: "https://example.com/project5",
+      link: "https://movse.netlify.app/",
     },
     {
-      title: "A portfolio website",
-      description: "A web application that showcases my projects and skills.",
+      title: "Cookie Gift App",
+      description: "A festive app where users fill in their details to receive a special Christmas gift.",
       image: sn6,
-      link: "https://example.com/project6",
+      link: "https://essecookies.netlify.app/",
     },
   ];
 
