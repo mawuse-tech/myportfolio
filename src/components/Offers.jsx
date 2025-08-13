@@ -4,12 +4,12 @@ import K from "./Constant";
 const Offers = () => {
     return (
         <div>
-            <div><h1 className='flex justify-center text-[30px] font-semibold font-mono'>MY SKILLS</h1></div>
+            <div><h1 className='flex justify-center text-[30px] font-semibold font-mono'>EXPERTISE</h1></div>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-5xl mx-auto my-24] mt-0'>
 
                 {
                     K.OFFERS.map((offer, index) => {
-                        console.log(`${index}: ${offer.text}`);
+                        // console.log(`${index}: ${offer.text}`);
                         return (
                             <div className='relative bg-white rounded-lg shadow-lg p-6 flex flex-col gap-y-4 overflow-hidden transition-all duration-300 ease-in-out group'>
                                 {/* Hover effect overlay */}

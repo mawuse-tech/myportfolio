@@ -38,11 +38,10 @@ function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
             >
-              <p className="text-white text-lg">Hi, I'm a <span className='text-pink-800'>Web Developer</span></p>
+              <p className="text-white text-lg">Hi, I'm a <span className='text-pink-800'>Full Stack Developer</span></p>
               <h1 className="text-[28px] md:text-[35px] font-extrabold text-white" data-text="MAWUSE AKPEKE">MAWUSE AKPEKE</h1>
               <p className="text-white mt-2">
-                With a strong foundation in HTML, CSS, JavaScript, React, I thrive on turning ideas into reality. I love
-                tackling challenges and continuously learning new technologies to enhance my skills.
+               With a passion for creating user-friendly and visually engaging web experiences, I thrive on transforming ideas into interactive realities. I enjoy tackling challenges, crafting solutions that blend creativity with functionality, and continuously learning to stay ahead in the ever-evolving world of tech.
               </p>
 
               {/* Buttons */}
