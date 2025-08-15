@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link, NavLink } from 'react-router-dom'; // Import Link from react-router-dom
 import { motion } from 'framer-motion';
 
 function Sidebar() {
@@ -25,7 +25,13 @@ function Sidebar() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <Link to="/dashboard">Resume</Link>
+          <NavLink to="/dashboard"
+            end
+            className={({ isActive }) =>
+              `p-3 rounded flex items-center gap-2 ${isActive ? "bg-white text-black" : "text-white"
+              }`
+            }
+          >Resume</NavLink>
         </motion.li>
         <motion.li
           className="text-lg hover:text-pink-600 cursor-pointer"
@@ -33,7 +39,12 @@ function Sidebar() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <Link to="/dashboard/mywork">My Projects</Link>
+          <NavLink to="/dashboard/mywork"
+            className={({ isActive }) =>
+              `p-3 rounded flex items-center gap-2 ${isActive ? "bg-white text-black" : "text-white"
+              }`
+            }
+          >My Projects</NavLink>
         </motion.li>
         <motion.li
           className="text-lg hover:text-pink-600 cursor-pointer"
@@ -41,7 +52,13 @@ function Sidebar() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
         >
-          <Link to="/dashboard/contact">Contact Information</Link>
+          <NavLink to="/dashboard/contact"
+
+            className={({ isActive }) =>
+              `p-3 rounded flex items-center gap-2 ${isActive ? "bg-white text-black" : "text-white"
+              }`
+            }
+          >Contact</NavLink>
         </motion.li>
         <motion.li
           className="text-lg hover:text-pink-600 cursor-pointer"
@@ -50,11 +67,17 @@ function Sidebar() {
           transition={{ duration: 0.6, delay: 0.6 }}
         >
 
-          <Link to="/dashboard/fun">Fun things about me</Link>
+          <NavLink to="/dashboard/fun"
+            
+            className={({ isActive }) =>
+              `p-3 rounded flex items-center gap-2 ${isActive ? "bg-white text-black" : "text-white"
+              }`
+            }
+          >Fun things I do</NavLink>
         </motion.li>
       </motion.ul>
-      
-      <motion.div 
+
+      <motion.div
         className="mt-auto aspect-square w-48 relative group overflow-hidden"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -62,20 +85,20 @@ function Sidebar() {
       >
         <div className="absolute inset-0 bg-gradient-to-br from-pink-500  to-pink-600 
           animate-gradient group-hover:scale-110 transition-transform duration-500" />
-        
+
         <div className="relative h-full flex flex-col items-center justify-center gap-3 p-4">
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
             className="h-12 w-12 transform group-hover:rotate-180 transition-transform duration-500"
-            fill="none" 
-            viewBox="0 0 24 24" 
+            fill="none"
+            viewBox="0 0 24 24"
             stroke="currentColor"
           >
-            <path 
-              strokeLinecap="round" 
-              strokeLinejoin="round" 
-              strokeWidth={2} 
-              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" 
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
             />
           </svg>
           <span className="text-center font-medium text-base whitespace-nowrap group-hover:scale-110 transition-transform duration-500">
