@@ -98,7 +98,7 @@ const Contact = () => {
         <motion.div variants={itemVariants} className="space-y-6">
           <h2 className="text-2xl font-semibold">Let's Connect</h2>
           <p className="text-gray-600">
-            I'm currently available for freelance work and full-time positions.
+            I'm currently available for full-time positions.
             If you have a project that needs coding or looking to hire,
             feel free to reach out!
           </p>
